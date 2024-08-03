@@ -1,0 +1,58 @@
+---
+title: "R Markdown Tutorial"
+author: "Griffy"
+date: "2024-08-03"
+output: 
+  html_document: 
+    highlight: zenburn
+    toc: true
+---
+
+# Hello World!
+## Heading2
+### Heading3
+#### Heading4
+
+*Italic*
+
+**Bold**
+
+***Bold Italic***
+
+1. list item 1
+2. list item 2
+
+
+- bullet 1
+* bullet 2
+
+**You can also add links to your document:**
+
+**For example,[Here is a link for my github](https://github.com/GriffyGe)**
+
+Below is a code chunk. You can click **`insert`** to add code chunk. 
+
+```{r}
+# Hello World
+
+# my code here
+num <- 2 + 4
+num
+
+data <- cars
+head(data,10)
+```
+
+Here is my next chunk of code. This is how you use the `plot()` function to create a scatter plot:
+
+```{r}
+plot(data$speed ~ data$dist)
+```
+
+### Session Info
+This is very helpful info when you want to share your markdown file with others. 
+```{r}
+sessionInfo()
+```
+
+
